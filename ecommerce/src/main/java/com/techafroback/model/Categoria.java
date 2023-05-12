@@ -6,19 +6,22 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Table(name= "tb_categorias")
+@Table(name = "tb_categorias")
 public class Categoria {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "ID")
   private int id;
 
-  @NotBlank(message= "O atributo tipo é Obrigatório!!")
-  @Size(min = 5, max = 255)
+  @NotEmpty
+  @NotNull
+  @Size(min = 5, max = 50)
+  @Column(name="TIPO")
   private String tipo;
  
   public Categoria(){    
