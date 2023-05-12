@@ -4,6 +4,9 @@ import javax.xml.crypto.Data;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
@@ -16,6 +19,11 @@ import jakarta.validation.constraints.Size;
 @Table(name = "tb_pedidos")
 public class Pedido {
   
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name="ID")
+  private int id;
+
   @NotEmpty
   @NotNull
   @Size(min = 5, max = 255)
@@ -35,9 +43,6 @@ public class Pedido {
   @Column(name = "DATA_ELABORACAO")
   private Data data_elaboracao;
 
-  public Pedido(){
-  }
-
   @OneToMany
   @JoinColumn(name = "id_produto")
   private Produto produto;
@@ -45,6 +50,17 @@ public class Pedido {
   @ManyToOne
   @JoinColumn(name = "id_usuario")
   private Usuario usuario;
+
+  public Pedido(){
+  }
+
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
+  }
 
   public String getEndereco() {
     return endereco;
