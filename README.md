@@ -23,5 +23,15 @@ Com o intuito de ajudar a expandir seu negócio, dona Tereza procurou nossa equi
 Back-end:
 > Desenvolvido usando: **JAVA**, **SPRINGBOOT**, **HIBERNATE**, **SQL**, **METODOLOGIAS ÁGEIS**;
 
+## Habilidades Desenvolvidas
 
-***
+Neste projeto, desenvolvi as seguintes habilidades:
+
+- Entender o que são Métodos Ágeis
+- Trabalhar em equipes utilizando a comunicação de forma eficaz
+- Praticar todas as habilidades desenvolvidas até o momento de Back-end
+
+## DRE
+
+
+
