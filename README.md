@@ -21,7 +21,7 @@ Com o intuito de ajudar a expandir seu negócio, dona Tereza procurou nossa equi
 # **Técnologias usadas**
 
 Back-end:
-> Desenvolvido usando: **JAVA**, **SPRINGBOOT**, **HIBERNATE**, **SQL*, **METODOLOGIAS ÁGEIS**;
+> Desenvolvido usando: **JAVA**, **SPRINGBOOT**, **HIBERNATE**, **SQL**, **METODOLOGIAS ÁGEIS**;
 
 
 ***
