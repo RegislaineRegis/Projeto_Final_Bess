@@ -29,7 +29,6 @@ public class Produto {
   private String nome;
   
   @NotEmpty
-  @NotNull
   @Column(name="PRECO")
   private float preco;
 
