@@ -1,12 +1,14 @@
 package com.techafroback.model;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
@@ -15,19 +17,30 @@ public class Usuario {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name="ID")
   private int id;
 
-  @NotBlank(message= "O atributo nome é Obrigatório!!")
-  @Size(min = 5, max = 255, message = "O atributo nome deve conter no mínimo 05 e no máximo 255 caracteres")
+  @NotEmpty
+  @NotNull
+  @Size(min = 5, max = 255)
+  @Column(name="NOME")
   private String nome;
 
-  @NotBlank(message= "O atributo email é Obrigatório!!")
-  @Size(min = 10, max = 50, message = "O atributo email deve conter no mínimo 10 e no máximo 50 caracteres")
+  @NotEmpty
+  @NotNull
+  @Size(min = 5, max = 50)
+  @Column(name="EMAIL")
   private String email;
 
-  @NotBlank(message= "O atributo senha é Obrigatório!!")
-  @Size(min = 6, max = 50, message = "O atributo senha deve conter no mínimo 06 e no máximo 50 caracteres")
+  @NotEmpty
+  @NotNull
+  @Size(min = 5, max = 50)
+  @Column(name="SENHA")
   private String senha;
+
+  public Usuario() {
+    
+  }
 
   public void setId( int id) {
     this.id = id;
