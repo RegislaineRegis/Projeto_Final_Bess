@@ -3,7 +3,7 @@ Este projeto contém conteúdos realizados por _[Regislaine Fidelis Regis](https
 Projeto em grupo do curso, os desenvolvedores foram:
 
 * [Regislaine Regis](https://github.com/RegislaineRegis)
-* [Evelyn Moraes]
+* [Evelyn Moraes](https://github.com/evyamoraes)
 * [Agatha Lopes]
 * [Alane Benjamin]
 * [Andressa Barbosa]
