@@ -5,7 +5,7 @@ Projeto em grupo do curso, os desenvolvedores foram:
 * [Regislaine Regis](https://github.com/RegislaineRegis)
 * [Evelyn Moraes](https://github.com/evyamoraes)
 * [Agatha Lopes]
-* [Alane Benjamin]
+* [Alane Benjamin](https://github.com/aabenjamim)
 * [Andressa Barbosa]
 # Projeto Final Ecommerce
 Elaboraramos um e-commerce que atende as demandas dentro de uma comunidade e que trará benefícios a todos que nela habita.
