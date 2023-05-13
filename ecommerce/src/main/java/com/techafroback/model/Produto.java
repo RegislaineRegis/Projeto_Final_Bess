@@ -6,7 +6,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
@@ -36,9 +35,9 @@ public class Produto {
   @JoinColumn(name = "id_categoria")
   private Categoria categoria;
 
-  @ManyToMany
+  @ManyToOne
   @JoinColumn(name = "id_pedido")
-  private Pedido pedido;
+  private Usuario usuario;
 
 
   public Produto(){
