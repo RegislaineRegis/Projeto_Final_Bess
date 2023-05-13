@@ -11,44 +11,48 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.techafroback.model.Usuario;
-import com.techafroback.repositories.UsuarioRepository;
+import com.techafroback.model.Produto;
+// import com.techafroback.repositories.CategoriaRepository;
+import com.techafroback.repositories.ProdutoRepository;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 @RestController
-@RequestMapping(value= "/usario")
-public class UsuarioController {
-
-  @Autowired
-  private UsuarioRepository repository;
+@RequestMapping(value= "/produto")
+public class ProdutoController {
   
+ // @Autowired
+	// private CategoriaRepository categoriaRepository;
+  
+	@Autowired
+	private ProdutoRepository produtoRepository;
+
   @GetMapping
-  public List<Usuario> findAll() {
-    List<Usuario> result = repository.findAll();
+  public List<Produto> findAll() {
+    List<Produto> result = produtoRepository.findAll();
     return result;
   }
 
   @GetMapping(value = "/{id}")
-  public Usuario findById(@PathVariable Long id) {
-    Usuario result = repository.findById(id).get();
+  public Produto findById(@PathVariable Long id) {
+    Produto result = produtoRepository.findById(id).get();
     return result;
   }
 
   @PostMapping
-  public Usuario insert(@RequestBody Usuario usuario) {
-    Usuario result = repository.save(usuario);
+  public Produto insert(@RequestBody Produto produto) {
+    Produto result = produtoRepository.save(produto);
     return result;
   }
 
   @PutMapping
-	public Usuario put (@RequestBody Usuario usuario){
-		return repository.save(usuario);
+	public Produto put (@RequestBody Produto produto){
+		return produtoRepository.save(produto);
 	}
 
   @DeleteMapping("/{id}")
 	public void delete(@PathVariable Long id){
-		repository.deleteById(id);		
+		produtoRepository.deleteById(id);		
 	}
 
 }
