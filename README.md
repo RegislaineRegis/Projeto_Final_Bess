@@ -14,9 +14,7 @@ Neste projeto criamos uma versão simplificada, com persistência no banco de da
 desenvolvendo em grupo suas funcionalidades de acordo com demandas definidas, em um cenário mais próximo ao do 
 mercado de trabalho. 
 
-A adega da dona Tereza está se informatizando! 
-
-A distribuidora de cervejas da dona Tereza está se informatizando!  Seu negócio, antes focado em um local específico da cidade, passou a receber uma quantidade massiva de encomendas de outros pontos, expandindo sua atuação via delivery. Isso tudo graças ao excelente preço das bebidas e atendimento da equipe de vendas.
+A adega de cervejas da dona Tereza está se informatizando!  Seu negócio, antes focado em um local específico da cidade, passou a receber uma quantidade massiva de encomendas de outros pontos, expandindo sua atuação via delivery. Isso tudo graças ao excelente preço das bebidas e atendimento da equipe de vendas.
 
 Agora a distribuidora possui alguns pontos de venda na cidade para agilizar no atendimento dessas áreas.
 
