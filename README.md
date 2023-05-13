@@ -33,6 +33,6 @@ Neste projeto, desenvolvi as seguintes habilidades:
 
 ## DRE
 
-![projetofinal_bess drawio](https://github.com/RegislaineRegis/Projeto_Final_Bess/assets/94489726/b82429ee-937a-41bf-8222-8bd03d1e7c14)
+![projetofinal_bess drawio (1)](https://github.com/RegislaineRegis/Projeto_Final_Bess/assets/94489726/13d84662-a7dd-4816-baf2-a0cffd5dcd08)
 
 
