@@ -23,7 +23,7 @@ Com o intuito de ajudar a expandir seu negócio, dona Tereza procurou nossa equi
 Back-end:
 > Desenvolvido usando: **JAVA**, **SPRINGBOOT**, **HIBERNATE**, **SQL**, **METODOLOGIAS ÁGEIS**;
 
-## Habilidades Desenvolvidas
+# **Habilidades Desenvolvidas**
 
 Neste projeto, desenvolvi as seguintes habilidades:
 
