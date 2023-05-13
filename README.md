@@ -23,7 +23,7 @@ Com o intuito de ajudar a expandir seu negócio, dona Tereza procurou nossa equi
 Back-end:
 > Desenvolvido usando: **JAVA**, **SPRINGBOOT**, **HIBERNATE**, **SQL**, **METODOLOGIAS ÁGEIS**;
 
-## Habilidades Desenvolvidas
+# **Habilidades Desenvolvidas**
 
 Neste projeto, desenvolvi as seguintes habilidades:
 
@@ -33,6 +33,7 @@ Neste projeto, desenvolvi as seguintes habilidades:
 
 ## DRE
 
-![projetofinal_bess drawio (1)](https://github.com/RegislaineRegis/Projeto_Final_Bess/assets/94489726/13d84662-a7dd-4816-baf2-a0cffd5dcd08)
+![projetofinal_bess drawio (2)](https://github.com/RegislaineRegis/Projeto_Final_Bess/assets/94489726/968ff2c3-7df6-4c33-bede-26cf103cc787)
+
 
 
