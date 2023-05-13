@@ -1,11 +1,12 @@
 package com.techafroback.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
@@ -30,14 +31,14 @@ public class Produto {
   @NotEmpty
   @Column(name="PRECO")
   private float preco;
-
+  
   @ManyToOne
-  @JoinColumn(name = "id_categoria")
-  private Categoria categoria;
-
-  @ManyToOne
-  @JoinColumn(name = "id_pedido")
-  private Usuario usuario;
+	@JsonIgnoreProperties ("produto")
+	private Categoria categoria;
+	
+	@ManyToOne
+	@JsonIgnoreProperties ("usuario")
+	private Usuario usuario;
 
 
   public Produto(){

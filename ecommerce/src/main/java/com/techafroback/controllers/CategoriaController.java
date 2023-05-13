@@ -19,35 +19,36 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 @RestController
 @RequestMapping("/categorias")
 public class CategoriaController {
+
   @Autowired
-  private CategoriaRepository repository;
+  private CategoriaRepository categoriaRepository;
   
   @GetMapping
   public List<Categoria> findAll() {
-    List<Categoria> result = repository.findAll();
+    List<Categoria> result = categoriaRepository.findAll();
     return result;
   }
 
   @GetMapping(value = "/{id}")
   public Categoria findById(@PathVariable Long id) {
-    Categoria result = repository.findById(id).get();
+    Categoria result = categoriaRepository.findById(id).get();
     return result;
   }
 
   @PostMapping
   public Categoria insert(@RequestBody Categoria categoria) {
-    Categoria result = repository.save(categoria);
+    Categoria result = categoriaRepository.save(categoria);
     return result;
   }
 
   @PutMapping
 	public Categoria put (@RequestBody Categoria categoria){
-		return repository.save(categoria);
+		return categoriaRepository.save(categoria);
 	}
 
   @DeleteMapping("/{id}")
 	public void delete(@PathVariable Long id){
-		repository.deleteById(id);		
+		categoriaRepository.deleteById(id);		
 	}
 
 }
