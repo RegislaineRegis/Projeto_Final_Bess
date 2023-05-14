@@ -3,6 +3,7 @@ package com.techafroback.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,21 +18,24 @@ import com.techafroback.repository.UsuarioRepository;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 @RestController
-@RequestMapping(value= "/usario")
+@RequestMapping(value= "/usuarios")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioController {
 
   @Autowired
-  private UsuarioRepository repository;
+  private UsuarioRepository usuarioRepository;
+
+  private
   
   @GetMapping
   public List<Usuario> findAll() {
-    List<Usuario> result = repository.findAll();
+    List<Usuario> result = usuarioRepository.findAll();
     return result;
   }
 
   @GetMapping(value = "/{id}")
   public Usuario findById(@PathVariable Long id) {
-    Usuario result = repository.findById(id).get();
+    Usuario result = usuarioRepository.findById(id).get();
     return result;
   }
 
