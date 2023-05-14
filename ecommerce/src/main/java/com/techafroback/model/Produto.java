@@ -67,4 +67,20 @@ public class Produto {
   public void setPreco(float preco) {
     this.preco = preco;
   }
+
+  public Usuario getUsuario() {
+		return usuario;
+	}
+
+  public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+  public Categoria getProduto() {
+		return categoria;
+	}
+
+  public void setProduto(Categoria categoria) {
+		this.categoria = categoria;
+	}
 }

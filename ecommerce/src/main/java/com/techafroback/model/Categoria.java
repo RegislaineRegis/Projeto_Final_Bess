@@ -5,7 +5,6 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,18 +20,14 @@ import jakarta.validation.constraints.Size;
 public class Categoria {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "ID")
   private Long id;
 
   @NotEmpty
   @NotNull
   @Size(min = 5, max = 50)
-  @Column(name="TIPO")
   private String tipo;
  
-  public Categoria(){    
-  }
-  
+ 
   @OneToMany(mappedBy = "categoria", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("categoria")
 	private List <Produto> produto;
@@ -53,4 +48,11 @@ public class Categoria {
     this.tipo = tipo;
   }
 
+  public List<Produto> getProduto() {
+		return produto;
+	}
+
+  public void setProduto(List<Produto> produto) {
+		this.produto = produto;
+	}
 }
