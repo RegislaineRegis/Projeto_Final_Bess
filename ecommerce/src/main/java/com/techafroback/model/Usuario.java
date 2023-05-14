@@ -1,11 +1,16 @@
 package com.techafroback.model;
 
 
-import jakarta.persistence.Column;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -17,29 +22,32 @@ public class Usuario {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name="ID")
   private Long id;
 
   @NotEmpty
   @NotNull
   @Size(min = 5, max = 255)
-  @Column(name="NOME")
   private String nome;
 
   @NotEmpty
   @NotNull
   @Size(min = 5, max = 50)
-  @Column(name="EMAIL")
   private String email;
 
   @NotEmpty
   @NotNull
   @Size(min = 5, max = 50)
-  @Column(name="SENHA")
   private String senha;
 
-  public Usuario() {
-    
+  @OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("usuario")
+	private List<Produto> produto;
+
+  public Usuario(Long id, String nome, String email, String senha) {
+    this.id = id;
+    this.nome = nome;
+    this.email = email;
+    this.senha = senha;
   }
 
   public void setId( Long id) {
