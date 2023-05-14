@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.techafroback.model.Categoria;
-import com.techafroback.repositories.CategoriaRepository;
+import com.techafroback.repository.CategoriaRepository;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 

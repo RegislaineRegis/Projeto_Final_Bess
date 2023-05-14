@@ -1,4 +1,4 @@
-package com.techafroback.repositories;
+package com.techafroback.repository;
 
 import java.math.BigDecimal;
 import java.util.List;

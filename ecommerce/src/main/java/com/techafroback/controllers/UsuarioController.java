@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.techafroback.model.Usuario;
-import com.techafroback.repositories.UsuarioRepository;
+import com.techafroback.repository.UsuarioRepository;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
